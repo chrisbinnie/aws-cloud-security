@@ -17,7 +17,7 @@ schema_type: "TechnicalArticle"
 
 # AWS Cloud Security Guide: Hardening & Protection
 
-Secure your AWS infrastructure with this comprehensive security information from my working notes. Learn essential hardening techniques from industry best practices including identity management, network security, and defense strategies for production workloads. This guide covers critical security domains from basic setup to advanced threat protection across all AWS services. Use this information at your own risk!
+Secure your AWS infrastructure with this comprehensive security information from my working notes. Learn essential hardening techniques from industry best practices including identity management, network security, and defense strategies for production workloads. This guide covers critical security domains from basic setup to advanced threat protection across all AWS services.
 
 AWS cloud security is fundamental for protecting your infrastructure from cyber threats, data breaches, and unauthorised access. This comprehensive guide covers essential security practices, from basic IAM hardening to advanced threat protection, ensuring your AWS environment remains secure and compliant with industry standards.
 
@@ -749,10 +749,12 @@ Remember that cloud security is a shared responsibility model and an ongoing pro
 
 ## Expert AWS and Cloud Security Resources
 
-Visit [Chris Binnie - Cloud Native Security](https://www.chrisbinnie.co.uk) for expert insights and practical guides on cloud security, AWS architecture, and infrastructure hardening.
+Visit [Chris Binnie - Cloud Native Security](https://www.chrisbinnie.co.uk) for expert insights and practical guides on cloud security, and infrastructure hardening.
 
 For comprehensive Linux server security practices that complement your AWS cloud security strategy, refer to the [Linux Server Security Guide](https://chrisbinnie.github.io/linux-server-security).
 
-Author of cloud security and AWS architecture books, with extensive experience in enterprise security implementations and AWS Well-Architected Framework reviews.
+Author of Cloud Native Security and Linux Server Security books, with extensive experience in enterprise security implementations and AWS Well-Architected Framework reviews.
+
+Linux® is the registered trademark of Linus Torvalds. Use the information found on these pages at your own risk.
 
 **Related Topics:** AWS Security, Cloud Security, IAM Hardening, VPC Security, AWS WAF, GuardDuty, Kubernetes, CloudTrail, S3 Security, Container Security, DevSecOps, Compliance Automation, Threat Detection
