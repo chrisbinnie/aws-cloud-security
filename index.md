@@ -740,7 +740,7 @@ Key AWS security principles include:
 - **Data protection** through encryption at rest and in transit
 - **Continuous monitoring** with CloudTrail, GuardDuty, and Security Hub
 - **Automated response** capabilities for threat mitigation
-- **Compliance automation** using Config Rules and Organizations
+- **Compliance automation** using Config Rules and Organisations
 - **Cost-conscious security** balancing protection with operational efficiency
 
 By implementing these security measures and maintaining them consistently, you'll significantly reduce your AWS infrastructure's attack surface and improve your overall security posture.
