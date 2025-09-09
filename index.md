@@ -15,7 +15,7 @@ twitter_card: "summary_large_image"
 schema_type: "TechnicalArticle"
 ---
 
-# AWS Cloud Security Guide: Complete Hardening & Protection Manual 2025
+# AWS Cloud Security Guide: Hardening & Protection Manual
 
 Secure your AWS infrastructure with this comprehensive security information from my working notes. Learn essential hardening techniques from industry best practices including identity management, network security, and defense strategies for production workloads. This guide covers critical security domains from basic setup to advanced threat protection across all AWS services. Use this information at your own risk!
 
