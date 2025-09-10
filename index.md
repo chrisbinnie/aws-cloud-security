@@ -9,7 +9,6 @@ last_modified_at: 2025-09-09
 canonical_url: "https://chrisbinnie.github.io/aws-cloud-security"
 og_title: "AWS Cloud Security Guide: Complete Hardening & Protection Manual 2025"
 og_description: "Secure your AWS infrastructure with this comprehensive security guide. Learn essential hardening techniques including IAM policies, VPC configuration, and advanced threat protection."
-og_image: "/assets/images/aws-security-guide.jpg"
 og_type: "article"
 twitter_card: "summary_large_image"
 schema_type: "TechnicalArticle"
@@ -751,7 +750,7 @@ Remember that cloud security is a shared responsibility model and an ongoing pro
 
 Visit [Chris Binnie - Cloud Native Security](https://www.chrisbinnie.co.uk) for expert insights and practical guides on cloud security, and infrastructure hardening.
 
-For comprehensive Linux server security practices that complement your AWS cloud security strategy, refer to the [Linux Server Security Guide](https://chrisbinnie.github.io/linux-server-security).
+For comprehensive Linux server security practices that complement your AWS cloud security strategy, refer to the [Linux Server Security Guide](https://chrisbinnie.github.io/linux-server-security). And, for Kubernetes security see my notes on the [Kubernetes Security Hardening page](https://chrisbinnie.github.io/kubernetes-security).
 
 Author of Cloud Native Security and Linux Server Security books, with extensive experience in enterprise security implementations and AWS Well-Architected Framework reviews.
 
