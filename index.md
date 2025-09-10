@@ -754,6 +754,6 @@ For comprehensive Linux server security practices that complement your AWS cloud
 
 Author of Cloud Native Security and Linux Server Security books, with extensive experience in enterprise security implementations and AWS Well-Architected Framework reviews.
 
-Linux® is the registered trademark of Linus Torvalds. Use the information found on these pages at your own risk.
+Linux® is the registered trademark of Linus Torvalds. Use the information from my notes found on these pages at your own risk.
 
 **Related Topics:** AWS Security, Cloud Security, IAM Hardening, VPC Security, AWS WAF, GuardDuty, Kubernetes, CloudTrail, S3 Security, Container Security, DevSecOps, Compliance Automation, Threat Detection
