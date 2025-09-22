@@ -18,6 +18,8 @@ schema_type: "TechnicalArticle"
 
 Secure your AWS infrastructure with this security information from my working notes. Treat the following code snippets as completely untested though. This page covers essential hardening techniques from industry best practices including identity management, network security, and defense strategies for production workloads, from basic setup to advanced threat protection across all AWS services.
 
+I often use an empty AWS account to test some of these type sof code snippets, almost like a sandbox you could say, to minimise issues.
+
 AWS cloud security is fundamental for protecting your infrastructure from cyber threats, data breaches, and unauthorised access. This comprehensive guide covers essential security practices, from basic IAM hardening to advanced threat protection, ensuring your AWS environment remains secure and compliant with industry standards.
 
 Whether you're managing EC2 instances, Lambda functions, S3 buckets, or complete multi-tier architectures, these security principles apply across all AWS services and will help you build a robust defence against modern cyber threats.
@@ -100,7 +102,7 @@ aws iam attach-user-policy --user-name username --policy-arn arn:aws:iam::ACCOUN
 
 ### IAM Role-Based Access Control
 
-Use IAM roles for EC2 instances instead of embedding credentials:
+Use IAM roles for EC2 instances instead of embedding credentials, these can be tricky to get right, so pay attention:
 
 ```bash
 # Create EC2 service role
@@ -187,7 +189,7 @@ aws ec2 associate-network-acl --network-acl-id acl-12345678 --subnet-id subnet-1
 
 ### WAF Rule Configuration
 
-Deploy AWS WAF to protect web applications from common attacks:
+Deploy AWS WAF to protect web applications from common attacks, but these can get expensive quickly from experience:
 
 ```bash
 # Create WAF WebACL
@@ -229,7 +231,7 @@ Implement AWS managed rule sets for comprehensive protection:
 
 ### S3 Bucket Hardening
 
-Secure S3 buckets with proper policies and encryption:
+Secure S3 buckets with proper policies and encryption, you MUST get these write to avoid data breaches, you have been warned:
 
 ```bash
 # Block public access at bucket level
@@ -353,7 +355,7 @@ aws guardduty create-publishing-destination --detector-id 12345678 --destination
 
 ### Security Hub Integration
 
-Centralise security findings with Security Hub:
+Centralise security findings with Security Hub, again watch out for unexpected costs though:
 
 ```bash
 # Enable Security Hub
@@ -438,7 +440,7 @@ aws ecs register-task-definition --family secure-app --task-role-arn arn:aws:iam
 
 ### EKS Security Hardening
 
-Implement Kubernetes security best practices on EKS:
+Implement Kubernetes security best practices on EKS, see my Kubernetes page linked to below for more on K8s security:
 
 ```bash
 # Create EKS cluster with private endpoint
@@ -593,7 +595,7 @@ def lambda_handler(event, context):
 
 ### Security Event Analysis
 
-Set up comprehensive logging for forensic analysis:
+Set up comprehensive logging for forensic analysis, which is exceptionally useful but make sure you get the bucket ACLs right:
 
 ```bash
 # Create dedicated forensics S3 bucket
@@ -649,7 +651,7 @@ aws inspector create-assessment-template --assessment-target-arn arn:aws:inspect
 aws events put-rule --name "WeeklySecurityScan" --schedule-expression "rate(7 days)"
 ```
 
-**Important** Test automated incident response procedures in a non-production environment to ensure they function correctly without causing service disruptions.
+**Important** Test automated responses in a non-production environment to ensure they function correctly without causing service disruptions. You tend not to repeat mistakes like this!
 
 ## Advanced Threat Protection
 
