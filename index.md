@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "AWS Cloud Security Guide by Chris Binnie"
-description: "Comprehensive AWS cloud security guide covering IAM hardening, VPC security, compliance frameworks, and threat protection. Essential practices for securing your AWS infrastructure against cyber threats."
+description: "AWS cloud security information from my working notes; covering IAM hardening, VPC security, compliance frameworks, and threat protection. Essential practices for securing AWS infrastructure against cyber threats."
 keywords: "AWS security, cloud security, IAM hardening, VPC security, AWS WAF, GuardDuty, CloudTrail, compliance, threat protection, cybersecurity"
 author: "Chris Binnie"
 date: 2025-09-09
@@ -16,7 +16,7 @@ schema_type: "TechnicalArticle"
 
 # Chris Binnie - AWS Cloud Security: Hardening & Protection
 
-Secure your AWS infrastructure with this security information from my working notes. Treat the following code snippets as untested though. This page covers essential hardening techniques from industry best practices including identity management, network security, and defense strategies for production workloads, from basic setup to advanced threat protection across all AWS services.
+Secure your AWS infrastructure with this security information from my working notes. Treat the following code snippets as completely untested though. This page covers essential hardening techniques from industry best practices including identity management, network security, and defense strategies for production workloads, from basic setup to advanced threat protection across all AWS services.
 
 AWS cloud security is fundamental for protecting your infrastructure from cyber threats, data breaches, and unauthorised access. This comprehensive guide covers essential security practices, from basic IAM hardening to advanced threat protection, ensuring your AWS environment remains secure and compliant with industry standards.
 
@@ -442,7 +442,7 @@ Implement Kubernetes security best practices on EKS:
 
 ```bash
 # Create EKS cluster with private endpoint
-aws eks create-cluster --name production-eks --version 1.21 --role-arn arn:aws:iam::ACCOUNT:role/EKSServiceRole --resources-vpc-config subnetIds=subnet-12345,subnet-67890,endpointConfigPrivate=true,endpointConfigPublic=false
+aws eks create-cluster --name production-eks --version 1.33 --role-arn arn:aws:iam::ACCOUNT:role/EKSServiceRole --resources-vpc-config subnetIds=subnet-12345,subnet-67890,endpointConfigPrivate=true,endpointConfigPublic=false
 
 # Enable EKS Pod Security Policy
 kubectl apply -f - <<EOF
@@ -649,7 +649,7 @@ aws inspector create-assessment-template --assessment-target-arn arn:aws:inspect
 aws events put-rule --name "WeeklySecurityScan" --schedule-expression "rate(7 days)"
 ```
 
-**Warning:** Always test automated incident response procedures in a controlled environment to ensure they function correctly without causing service disruptions.
+**Important** Test automated incident response procedures in a non-production environment to ensure they function correctly without causing service disruptions.
 
 ## Advanced Threat Protection
 
@@ -756,4 +756,4 @@ Author of Cloud Native Security and Linux Server Security books, with extensive 
 
 Linux® is the registered trademark of Linus Torvalds. Use the information from my notes found on these pages at your own risk.
 
-**Related Topics:** AWS Security, Cloud Security, IAM Hardening, VPC Security, AWS WAF, GuardDuty, Kubernetes, CloudTrail, S3 Security, Container Security, DevSecOps, Compliance Automation, Threat Detection
+**Related Topics:** AWS Security, Cloud Security, IAM Hardening, VPC Security, AWS WAF, GuardDuty, Kubernetes, CloudTrail, S3 Security, Container Security, DevSecOps, Compliance Automation, Threat Detection, AWS EKS, Managed Kubernetes Service
