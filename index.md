@@ -16,7 +16,7 @@ schema_type: "TechnicalArticle"
 
 # Chris Binnie - AWS Cloud Security: Hardening & Protection
 
-Secure your AWS infrastructure with this comprehensive security information from my working notes. Learn essential hardening techniques from industry best practices including identity management, network security, and defense strategies for production workloads. This guide covers critical security domains from basic setup to advanced threat protection across all AWS services.
+Secure your AWS infrastructure with this security information from my working notes. Treat the following code snippets as untested though. This page covers essential hardening techniques from industry best practices including identity management, network security, and defense strategies for production workloads, from basic setup to advanced threat protection across all AWS services.
 
 AWS cloud security is fundamental for protecting your infrastructure from cyber threats, data breaches, and unauthorised access. This comprehensive guide covers essential security practices, from basic IAM hardening to advanced threat protection, ensuring your AWS environment remains secure and compliant with industry standards.
 
