@@ -16,7 +16,7 @@ schema_type: "TechnicalArticle"
 
 # Chris Binnie - AWS Cloud Security: Hardening & Protection
 
-Secure your AWS infrastructure with this security information from my working notes. Treat the following code snippets as completely untested though. This page covers essential hardening techniques from industry best practices including identity management, network security, and defense strategies for production workloads, from basic setup to advanced threat protection across all AWS services.
+Secure your AWS infrastructure with this security information from my working notes. Treat the following code snippets as completely untested though. This page covers essential hardening techniques from industry best practices including identity management, network security, and defense strategies for production workloads, from the initial configuration through to advanced threat protection across many of AWS's services.
 
 I often use an empty AWS account to test this type of work, almost like a sandbox account you could say, to minimise issues.
 
