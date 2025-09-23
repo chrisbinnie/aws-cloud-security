@@ -18,7 +18,7 @@ schema_type: "TechnicalArticle"
 
 Secure your AWS infrastructure with this security information from my working notes. Treat the following code snippets as completely untested though. This page covers essential hardening techniques from industry best practices including identity management, network security, and defense strategies for production workloads, from basic setup to advanced threat protection across all AWS services.
 
-I often use an empty AWS account to test some of these type sof code snippets, almost like a sandbox you could say, to minimise issues.
+I often use an empty AWS account to test this type of work, almost like a sandbox account you could say, to minimise issues.
 
 AWS cloud security is fundamental for protecting your infrastructure from cyber threats, data breaches, and unauthorised access. This comprehensive guide covers essential security practices, from basic IAM hardening to advanced threat protection, ensuring your AWS environment remains secure and compliant with industry standards.
 
