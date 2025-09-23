@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "AWS Cloud Security Guide by Chris Binnie"
+title: "AWS Cloud Security by Chris Binnie"
 description: "AWS cloud security information from my working notes; covering IAM hardening, VPC security, compliance frameworks, and threat protection. Essential practices for securing AWS infrastructure against cyber threats."
 keywords: "AWS security, cloud security, IAM hardening, VPC security, AWS WAF, GuardDuty, CloudTrail, compliance, threat protection, cybersecurity"
 author: "Chris Binnie"
