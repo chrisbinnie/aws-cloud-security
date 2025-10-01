@@ -533,7 +533,24 @@ Implement organisation-wide security policies:
       "Sid": "EnforceRegionRestriction",
       "Effect": "Deny",
       "Principal": "*",
-      "Action": "*",
+      "NotAction": [
+        "iam:*",
+        "organizations:*",
+        "account:*",
+        "cloudfront:*",
+        "route53:*",
+        "route53domains:*",
+        "support:*",
+        "budgets:*",
+        "ce:*",
+        "billing:*",
+        "payments:*",
+        "globalaccelerator:*",
+        "importexport:*",
+        "trustedadvisor:*",
+        "waf:*",
+        "shield:*"
+      ],
       "Resource": "*",
       "Condition": {
         "StringNotEquals": {
@@ -545,31 +562,6 @@ Implement organisation-wide security policies:
         "ArnNotLike": {
           "aws:PrincipalArn": [
             "arn:aws:iam::*:role/OrganizationAccountAccessRole"
-          ]
-        }
-      }
-    },
-    {
-      "Sid": "AllowGlobalServices",
-      "Effect": "Deny",
-      "NotAction": [
-        "iam:*",
-        "organizations:*",
-        "account:*",
-        "cloudfront:*",
-        "route53:*",
-        "support:*",
-        "budgets:*",
-        "ce:*",
-        "billing:*",
-        "payments:*"
-      ],
-      "Resource": "*",
-      "Condition": {
-        "StringNotEquals": {
-          "aws:RequestedRegion": [
-            "eu-west-1",
-            "eu-west-2"
           ]
         }
       }
