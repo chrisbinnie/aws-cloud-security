@@ -511,22 +511,59 @@ Implement organisation-wide security policies:
   "Version": "2012-10-17",
   "Statement": [
     {
-      "Sid": "DenyRootAccess",
+      "Sid": "DenyRootAccessExceptCriticalServices",
+      "Effect": "Deny",
+      "Principal": "*",
+      "NotAction": [
+        "iam:*",
+        "organizations:*",
+        "account:*",
+        "support:*",
+        "billing:*",
+        "payments:*"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringLike": {
+          "aws:PrincipalArn": "arn:aws:iam::*:root"
+        }
+      }
+    },
+    {
+      "Sid": "EnforceRegionRestriction",
       "Effect": "Deny",
       "Principal": "*",
       "Action": "*",
       "Resource": "*",
       "Condition": {
-        "StringEquals": {
-          "aws:PrincipalType": "Root"
+        "StringNotEquals": {
+          "aws:RequestedRegion": [
+            "eu-west-1",
+            "eu-west-2"
+          ]
+        },
+        "ArnNotLike": {
+          "aws:PrincipalArn": [
+            "arn:aws:iam::*:role/OrganizationAccountAccessRole"
+          ]
         }
       }
     },
     {
-      "Sid": "DenyRegionRestriction",
+      "Sid": "AllowGlobalServices",
       "Effect": "Deny",
-      "Principal": "*",
-      "Action": "*",
+      "NotAction": [
+        "iam:*",
+        "organizations:*",
+        "account:*",
+        "cloudfront:*",
+        "route53:*",
+        "support:*",
+        "budgets:*",
+        "ce:*",
+        "billing:*",
+        "payments:*"
+      ],
       "Resource": "*",
       "Condition": {
         "StringNotEquals": {
