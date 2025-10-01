@@ -515,7 +515,6 @@ Implement organisation-wide security policies:
       "Effect": "Deny",
       "Principal": "*",
       "NotAction": [
-        "iam:*",
         "organizations:*",
         "account:*",
         "support:*",
