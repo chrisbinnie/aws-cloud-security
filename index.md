@@ -784,7 +784,7 @@ Just published... my complete guide on [how to achieve 100% website scores for S
 
 For comprehensive Linux server security practices that complement your AWS cloud security strategy, refer to the [Linux Server Security Guide](https://chrisbinnie.github.io/linux-server-security). And, for Kubernetes security see my notes on the [Kubernetes Security Hardening page](https://chrisbinnie.github.io/kubernetes-security).
 
-Author of Cloud Native Security and Linux Server Security books, with extensive experience in enterprise security implementations and AWS Well-Architected Framework reviews.
+Author of Cloud Native Security and Linux Server Security books, [Chris Binnie](https://chrisbinnie.github.io/about.html) has extensive experience in enterprise security implementations and AWS Well-Architected Framework reviews.
 
 Linux® is the registered trademark of Linus Torvalds. Use the information from my notes found on these pages at your own risk.
 
